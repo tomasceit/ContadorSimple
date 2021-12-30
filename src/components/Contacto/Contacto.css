@@ -1,0 +1,36 @@
+section#contacto {
+    background-image: url("../../media/contacto_background.png");
+    background-size: cover;
+    background-position: top center;
+    margin: 120px 0;
+  }
+  
+  button.btn-contacto {
+    background-color: #5cb269;
+    color: white;
+    width: 9rem;
+    height: 4rem;
+    font-size: 24px;
+  }
+  .btn-contacto:hover {
+    background-color: #407c49;
+    color: white;
+  }
+  
+  .form-control::placeholder {
+    color: #343a40;
+  }
+  
+  div.form-floating {
+    width: 45%;
+  }
+  
+  #contactMessage {
+    resize: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    form > div {
+      width: 55% !important;
+    }
+  }

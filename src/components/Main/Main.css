@@ -1,0 +1,40 @@
+.main--collapse,
+.main--collapse:hover,
+.main--collapse:focus {
+  background-color: transparent;
+  color: #386994;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.card {
+  border: none;
+  outline: none;
+}
+.article__text {
+  font-size: 18px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+span.bold {
+  font-weight: 700;
+  display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+  .main__article {
+    padding-top: 15px;
+  }
+}
+
+/* Servicios */
+
+#servicios p {
+  max-width: 350px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 768px) {
+  #collapse_servicios {
+    flex-direction: row !important;
+  }
+}

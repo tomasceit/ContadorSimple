@@ -1,0 +1,53 @@
+.banner-img {
+  background-image: url("../../media/banner-2.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 450px;
+}
+.banner-img h2 {
+  color: #386994;
+  font-size: 40px;
+  font-weight: 700;
+}
+.banner-img h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.banner-content {
+  position: relative;
+  top: 35%;
+  margin: 0 2.3rem;
+}
+.banner-content h2 {
+  margin-bottom: 1rem;
+}
+.btn-informacion {
+  color: #494949;
+  font-weight: 700;
+  border: solid 2px #5bb268;
+  background-color: white;
+}
+.btn-informacion:hover {
+  color: white;
+  background-color: #5bb268;
+  border-color: #5bb268;
+}
+.btn-informacion:focus {
+  box-shadow: 0 0 0 0.25rem #5bb26859;
+}
+@media only screen and (min-width: 768px) {
+  .banner-img h2 {
+    font-size: 48px;
+  }
+  .banner-img h3 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 382px) {
+  .banner-img h2 {
+    font-size: 32px;
+  }
+  .banner-img h3 {
+    font-size: 16px;
+  }
+}
