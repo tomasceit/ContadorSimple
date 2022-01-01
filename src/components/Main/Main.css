@@ -1,3 +1,6 @@
+.main__title {
+  color: #386994;
+}
 .main--collapse,
 .main--collapse:hover,
 .main--collapse:focus {
@@ -21,9 +24,41 @@ span.bold {
   font-weight: 700;
   display: inline-block;
 }
+
+.icon-heart {
+  cursor: pointer;
+  font-size: 2rem;
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.icon-heart span {
+  display: flex;
+  position: absolute;
+  transition: 0.3s all;
+}
+.icon-heart:hover span:last-child {
+  opacity: 1;
+}
+.icon-heart span:last-child {
+  opacity: 0;
+}
+.icon-heart span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 @media only screen and (min-width: 768px) {
   .main__article {
     padding-top: 15px;
+  }
+  main > section {
+    min-height: calc(100vh - 6.5rem);
   }
 }
 
@@ -32,9 +67,4 @@ span.bold {
 #servicios p {
   max-width: 350px;
   font-size: 20px;
-}
-@media only screen and (min-width: 768px) {
-  #collapse_servicios {
-    flex-direction: row !important;
-  }
 }

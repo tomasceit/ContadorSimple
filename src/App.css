@@ -19,3 +19,11 @@ h6 {
   margin-top: 90px;
   transition: all 0.5s ease;
 }
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}

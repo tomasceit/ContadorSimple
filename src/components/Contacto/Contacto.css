@@ -1,36 +1,53 @@
-section#contacto {
-    background-image: url("../../media/contacto_background.png");
-    background-size: cover;
-    background-position: top center;
-    margin: 120px 0;
+section#contacto > div {
+  background-image: url("../../media/contacto_background.png");
+  background-size: cover;
+  background-position: top center;
+}
+
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.form__textarea {
+  grid-column: 1/2;
+}
+
+button.btn-contacto {
+  background-color: #5cb269;
+  color: white;
+  width: 9rem;
+  height: 4rem;
+  font-size: 24px;
+  grid-column: 1/2;
+  margin: auto;
+}
+.btn-contacto:hover {
+  background-color: #407c49;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: #343a40;
+}
+
+#contactMessage {
+  resize: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
   }
-  
+  .form__textarea {
+    grid-column: 1/3;
+  }
   button.btn-contacto {
-    background-color: #5cb269;
-    color: white;
-    width: 9rem;
-    height: 4rem;
-    font-size: 24px;
+    grid-column: 1/3;
+    margin: 0;
   }
-  .btn-contacto:hover {
-    background-color: #407c49;
-    color: white;
-  }
-  
-  .form-control::placeholder {
-    color: #343a40;
-  }
-  
-  div.form-floating {
-    width: 45%;
-  }
-  
-  #contactMessage {
-    resize: none;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    form > div {
-      width: 55% !important;
-    }
-  }
+}

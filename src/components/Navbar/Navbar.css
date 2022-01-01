@@ -1,75 +1,74 @@
 .main-logo {
-    height: 4.5rem;
-    width: auto;
-    transition: all 0.5s ease;
+  height: 4.5rem;
+  width: auto;
+  transition: all 0.5s ease;
+}
+.main-logo-scroll {
+  height: 4.5rem !important;
+  transition: all 0.5s ease;
+}
+.nav-item,
+.nav-link {
+  cursor: pointer;
+  padding: 0.25rem;
+  top: -250px;
+}
+.navbar-brand {
+  margin-right: 0;
+}
+a.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #49494985;
+}
+a.nav-link.active {
+  font-weight: 700;
+  color: #494949;
+}
+a.nav-link:hover,
+a.nav-link:focus {
+  font-weight: 700;
+  color: #494949;
+}
+.nav-contacto {
+  color: #5bb268 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.navbar {
+    padding: 0.3rem 3rem !important;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
   }
-  .main-logo-scroll {
-    height: 4.5rem !important;
-    transition: all 0.5s ease;
+  ul.navbar-nav {
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+  }
+  .main-logo {
+    height: 6.5rem;
+  }
+  a.nav-link {
+    font-size: 18px;
   }
   .nav-item,
   .nav-link {
-    cursor: pointer;
-    padding: 0.25rem;
-    top: -250px;
+    padding: 0.5rem;
   }
-  .navbar-brand {
-    margin-right: 0;
+  div.navbar-content {
+    width: auto !important;
   }
+  div.container-fluid {
+    justify-content: space-between !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 382px) {
   a.nav-link {
-    font-size: 15px;
-    font-weight: 500;
-    color: #49494985;
+    font-size: 13px;
   }
-  a.nav-link.active {
-    font-weight: 700;
-    color: #494949;
-  }
-  a.nav-link:hover,
-  a.nav-link:focus {
-    font-weight: 700;
-    color: #494949;
-  }
-  .nav-contacto {
-    color: #5bb268 !important;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    nav.navbar {
-      padding: 0.3rem 3rem !important;
-      position: fixed !important;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 1030;
-    }
-    ul.navbar-nav {
-      flex-direction: row !important;
-      justify-content: flex-end !important;
-    }
-    .main-logo {
-      height: 6.5rem;
-    }
-    a.nav-link {
-      font-size: 18px;
-    }
-    .nav-item,
-    .nav-link {
-      padding: 0.5rem;
-    }
-    div.navbar-content {
-      width: auto !important;
-    }
-    div.container-fluid {
-      justify-content: space-between !important;
-      padding-right: 2rem !important;
-      padding-left: 2rem !important;
-    }
-  }
-  
-  @media only screen and (max-width: 382px) {
-    a.nav-link {
-      font-size: 13px;
-    }
-  }
-  
+}
