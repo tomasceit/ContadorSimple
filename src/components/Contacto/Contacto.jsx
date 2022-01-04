@@ -54,7 +54,7 @@ const Contacto = () => {
   }
 
   return (
-    <section id="contacto">
+    <section id="contacto" className="pt-3">
       <h2 className="main__title container">Haga su consulta aquí</h2>
       <div className="p-5 mt-4">
         <div className="container">

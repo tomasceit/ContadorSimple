@@ -34,24 +34,10 @@ const Main = () => {
         </div>
         <article className="mt-2">
           <h2 className="main__title">¿Quiénes somos?</h2>
-          <p className="p-3 pb-0 article__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh id
-            tellus odio quis. Ullamcorper in condimentum aliquet quam vel
-            aliquam ornare. Imperdiet pharetra risus proin sed. Molestie massa
-            urna gravida fringilla vulputate ultrices egestas. Eget egestas
-            proin nunc, proin sodales congue. A massa pretium nisl, risus leo
-            morbi iaculis. Dictumst quisque netus quam nec aliquet. Tellus fusce
-            purus urna sagittis.
-          </p>
-          <p className="p-3  article__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh id
-            tellus odio quis. Ullamcorper in condimentum aliquet quam vel
-            aliquam ornare. Imperdiet pharetra risus proin sed. Molestie massa
-            urna gravida fringilla vulputate ultrices egestas. Eget egestas
-            proin nunc, proin sodales congue. A massa pretium nisl, risus leo
-            morbi iaculis. Dictumst quisque netus quam nec aliquet. Tellus fusce
-            purus urna sagittis.
-          </p>
+          <p className="p-3 pb-0 article__text">Somos una empresa joven formada especializada en el asesoramiento empresarial y en el desarrollo de emprendimientos. Nos gusta trabajar a la par de nuestros clientes logrando una gestión clara, sencilla y confiable. En este contexto cada vez más complejo, si necesitas un contador, que sea <span className="bold">simple</span>.</p>
+          <p className="p-3 pt-2 pb-0 article__text"><span className="article__text--green">MISIÓN</span>. Facilitar el desarrollo sostenible de un negocio.</p>
+          <p className="p-3 pt-2 pb-0 article__text"><span className="article__text--green">VISIÓN</span>. Ser la empresa más enfocada en simplificar la gestión y la consecuente evolución de un proyecto.</p>
+          <p className="p-3 pt-2 article__text"><span className="article__text--green">VALORES</span>. Compromiso, innovación, sustentabilidad, resiliencia, empatía, responsabilidad.</p>
         </article>
       </section>
 

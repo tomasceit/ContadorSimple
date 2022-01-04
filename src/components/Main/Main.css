@@ -19,6 +19,10 @@
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.article__text--green {
+  color: #5bb268;
+  font-weight: bold;
+}
 
 span.bold {
   font-weight: 700;
