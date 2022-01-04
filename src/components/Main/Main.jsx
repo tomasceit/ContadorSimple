@@ -1,27 +1,36 @@
 import * as React from "react";
-import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
-import './Main.css'
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import "./Main.css";
 
 const Main = () => {
+  const handleIcon = () => {
+    const iconHeartOpacity = document.querySelector("#iconHeartOpacity");
+    iconHeartOpacity.classList.toggle("icon-heart--opacity");
+  };
   return (
     <main className="container">
       {/* Sección que ofrecemos */}
       <article id="que_ofrecemos" className="main__article">
         <h2 className="main__title">¿Qué ofrecemos?</h2>
         <p className="p-3 article__text">
-          Contador Simple ofrece una amplia gama de servicios de consultoría
-          en materia impositiva, financiera y de administración. Trabajamos
-          junto con nuestros clientes de principio a fin centrándonos en sus
+          Contador Simple ofrece una amplia gama de servicios de consultoría en
+          materia impositiva, financiera y de administración. Trabajamos junto
+          con nuestros clientes de principio a fin centrándonos en sus
           necesidades a la vez que producimos nuevas ideas, desarrollamos
           estrategias efectivas y diseñamos solucionaes escalables de alta
           calidad.
-          <span className="bold">Contáctenos para obtener más información. </span>
+          <span className="bold">
+            Contáctenos para obtener más información.{" "}
+          </span>
         </p>
       </article>
       {/* Sección quienes somos */}
       <section id="quienes_somos" className="main__article">
         <div className="row py-3">
-          <img src={require("../../media/about-us.png")} alt="personas fisicas" />
+          <img
+            src={require("../../media/about-us.png")}
+            alt="personas fisicas"
+          />
         </div>
         <article className="mt-2">
           <h2 className="main__title">¿Quiénes somos?</h2>
@@ -66,7 +75,11 @@ const Main = () => {
               px-3
             "
           >
-            <img src={require("../../media/persona_fisica.png")} className="w-100" alt="personas fisicas" />
+            <img
+              src={require("../../media/persona_fisica.png")}
+              className="w-100"
+              alt="personas fisicas"
+            />
             <h3 className="my-4">PERSONAS FÍSICAS</h3>
             <p className="text-align-justify">
               <span className="d-block">Asesoramiento Tributario.</span>
@@ -86,7 +99,11 @@ const Main = () => {
               px-3
             "
           >
-            <img src={require("../../media/pymes.png")} className="w-100" alt="pymes" />
+            <img
+              src={require("../../media/pymes.png")}
+              className="w-100"
+              alt="pymes"
+            />
             <h3 className="my-4">PYMES</h3>
             <p className="text-align-justify">
               <span className="d-block">Haga crecer su negocio.</span> Contador
@@ -113,7 +130,19 @@ const Main = () => {
             morbi iaculis. Dictumst quisque netus quam nec aliquet. Tellus fusce
             purus urna sagittis.
           </p>
-          <i className="icon-heart"><span><AiOutlineHeart/></span><span><AiFillHeart/></span></i>
+          <input type="checkbox" className="d-none" id="iconHeartInput" />
+          <label
+            className="icon-heart"
+            htmlFor="iconHeartInput"
+            onClick={handleIcon}
+          >
+            <span>
+              <AiOutlineHeart />
+            </span>
+            <span id="iconHeartOpacity">
+              <AiFillHeart />
+            </span>
+          </label>
         </section>
       </section>
     </main>

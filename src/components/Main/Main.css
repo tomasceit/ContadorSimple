@@ -28,7 +28,7 @@ span.bold {
 .icon-heart {
   cursor: pointer;
   font-size: 2rem;
-  color: green;
+  color: #5bb268 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +37,10 @@ span.bold {
   right: 0.5rem;
   height: 2.5rem;
   width: 2.5rem;
+}
+.icon-heart--opacity {
+  opacity: 1 !important;
+  animation: animationHeart 0.5s forwards;
 }
 .icon-heart span {
   display: flex;
@@ -48,9 +52,6 @@ span.bold {
 }
 .icon-heart span:last-child {
   opacity: 0;
-}
-.icon-heart span {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -67,4 +68,16 @@ span.bold {
 #servicios p {
   max-width: 350px;
   font-size: 20px;
+}
+
+@keyframes animationHeart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
