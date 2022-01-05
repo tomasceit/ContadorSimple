@@ -3,6 +3,7 @@ import './Contacto.css'
 
 const Contacto = () => {
   const [userData, setUserData] = React.useState({}); // obtiene los datos de los inputs.
+  console.log(userData); // se llama a userData para deployar sin problemas.
   const [btnVar, setBtnVar] = React.useState(false);
   const [userNameData, setUserNameData] = React.useState("");
   const [userLastNameData, setUserLastNameData] = React.useState("");
