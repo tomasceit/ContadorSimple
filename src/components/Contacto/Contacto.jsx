@@ -9,7 +9,7 @@ const Contacto = () => {
           <h2 className="article__title">Haga su consulta aquí</h2>
         </button>
         <form
-          action="https://formsubmit.co/984aafc8d4162329751661e4f105c5a6 "
+          action="https://formsubmit.co/26529d4aa9ba9c3dc15fc20805efc4ce"
           method="POST"
         >
           <div className="d-flex flex-column">
