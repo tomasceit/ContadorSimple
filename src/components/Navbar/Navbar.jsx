@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className="container-fluid justify-content-center px-1">
         <a href="index.html" className="navbar-brand">
-          <img id="logo" className={scroll ? "main-logo-scroll" : "main-logo"} src={require("../../media/Logo.jpg")} alt="logo" />
+          <img id="logo" className={scroll ? "main-logo-scroll" : "main-logo"} src={require("../../media/Logo.webp")} alt="logo" />
         </a>
         <div className="navbar-content justify-content-end w-100">
           <ul className="navbar-nav flex-row justify-content-around">

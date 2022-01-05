@@ -54,7 +54,7 @@ const Main = () => {
         <section id="quienes_somos" className="main__article">
           <div className="row py-3">
             <img
-              src={require("../../media/about-us.png")}
+              src={require("../../media/about-us.webp")}
               alt="personas fisicas"
             />
           </div>
@@ -106,7 +106,7 @@ const Main = () => {
             "
             >
               <img
-                src={require("../../media/persona_fisica.png")}
+                src={require("../../media/persona_fisica.webp")}
                 className="w-100"
                 alt="personas fisicas"
               />
@@ -131,7 +131,7 @@ const Main = () => {
             "
             >
               <img
-                src={require("../../media/pymes.png")}
+                src={require("../../media/pymes.webp")}
                 className="w-100"
                 alt="pymes"
               />
