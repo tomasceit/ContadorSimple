@@ -1,12 +1,8 @@
 import * as React from "react";
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import "./Main.css";
+import Blog from "../Blog/Blog";
 
 const Main = () => {
-  const handleIcon = () => {
-    const iconHeartOpacity = document.querySelector("#iconHeartOpacity");
-    iconHeartOpacity.classList.toggle("icon-heart--opacity");
-  };
   return (
     <main className="container">
       {/* Sección que ofrecemos */}
@@ -18,8 +14,7 @@ const Main = () => {
           con nuestros clientes de principio a fin centrándonos en sus
           necesidades a la vez que producimos nuevas ideas, desarrollamos
           estrategias efectivas y diseñamos solucionaes escalables de alta
-          calidad.
-          <span className="bold">
+          calidad. <span className="bold">
             Contáctenos para obtener más información.{" "}
           </span>
         </p>
@@ -34,10 +29,26 @@ const Main = () => {
         </div>
         <article className="mt-2">
           <h2 className="main__title">¿Quiénes somos?</h2>
-          <p className="p-3 pb-0 article__text">Somos una empresa joven formada especializada en el asesoramiento empresarial y en el desarrollo de emprendimientos. Nos gusta trabajar a la par de nuestros clientes logrando una gestión clara, sencilla y confiable. En este contexto cada vez más complejo, si necesitas un contador, que sea <span className="bold">simple</span>.</p>
-          <p className="p-3 pt-2 pb-0 article__text"><span className="article__text--green">MISIÓN</span>. Facilitar el desarrollo sostenible de un negocio.</p>
-          <p className="p-3 pt-2 pb-0 article__text"><span className="article__text--green">VISIÓN</span>. Ser la empresa más enfocada en simplificar la gestión y la consecuente evolución de un proyecto.</p>
-          <p className="p-3 pt-2 article__text"><span className="article__text--green">VALORES</span>. Compromiso, innovación, sustentabilidad, resiliencia, empatía, responsabilidad.</p>
+          <p className="p-3 pb-0 article__text">
+            Somos una empresa joven formada especializada en el asesoramiento
+            empresarial y en el desarrollo de emprendimientos. Nos gusta
+            trabajar a la par de nuestros clientes logrando una gestión clara,
+            sencilla y confiable. En este contexto cada vez más complejo, si
+            necesitas un contador, que sea <span className="bold">simple</span>.
+          </p>
+          <p className="p-3 pt-2 pb-0 article__text">
+            <span className="article__text--green">MISIÓN</span>. Facilitar el
+            desarrollo sostenible de un negocio.
+          </p>
+          <p className="p-3 pt-2 pb-0 article__text">
+            <span className="article__text--green">VISIÓN</span>. Ser la empresa
+            más enfocada en simplificar la gestión y la consecuente evolución de
+            un proyecto.
+          </p>
+          <p className="p-3 pt-2 article__text">
+            <span className="article__text--green">VALORES</span>. Compromiso,
+            innovación, sustentabilidad, resiliencia, empatía, responsabilidad.
+          </p>
         </article>
       </section>
 
@@ -105,31 +116,9 @@ const Main = () => {
       {/* Sección nuestro Blog */}
       <section id="blog" className="main__article">
         <h2 className="main__title">Nuestro Blog</h2>
-        <section className="p-4 m-md-5 mx-2 my-5 position-relative border border-dark">
-          <h3 className="">Lorem Impsum</h3>
-          <p className="article__text mr-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh id
-            tellus odio quis. Ullamcorper in condimentum aliquet quam vel
-            aliquam ornare. Imperdiet pharetra risus proin sed. Molestie massa
-            urna gravida fringilla vulputate ultrices egestas. Eget egestas
-            proin nunc, proin sodales congue. A massa pretium nisl, risus leo
-            morbi iaculis. Dictumst quisque netus quam nec aliquet. Tellus fusce
-            purus urna sagittis.
-          </p>
-          <input type="checkbox" className="d-none" id="iconHeartInput" />
-          <label
-            className="icon-heart"
-            htmlFor="iconHeartInput"
-            onClick={handleIcon}
-          >
-            <span>
-              <AiOutlineHeart />
-            </span>
-            <span id="iconHeartOpacity">
-              <AiFillHeart />
-            </span>
-          </label>
-        </section>
+        <Blog titulo="Titulo 1" />
+        <Blog titulo="Titulo 2" />
+        <Blog titulo="Titulo 3" />
       </section>
     </main>
   );

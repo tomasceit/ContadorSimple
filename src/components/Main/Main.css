@@ -62,9 +62,6 @@ span.bold {
   .main__article {
     padding-top: 15px;
   }
-  main > section {
-    min-height: calc(100vh - 6.5rem);
-  }
 }
 
 /* Servicios */

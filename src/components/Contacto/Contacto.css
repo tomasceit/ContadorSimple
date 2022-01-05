@@ -1,17 +1,8 @@
-section#contacto > div {
+section#contacto {
   background-image: url("../../media/contacto_background.png");
   background-size: cover;
   background-position: top center;
-}
-
-.form {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-.form__textarea {
-  grid-column: 1/2;
+  margin: 120px 0;
 }
 
 button.btn-contacto {
@@ -20,8 +11,6 @@ button.btn-contacto {
   width: 9rem;
   height: 4rem;
   font-size: 24px;
-  grid-column: 1/2;
-  margin: auto;
 }
 .btn-contacto:hover {
   background-color: #407c49;
@@ -32,22 +21,38 @@ button.btn-contacto {
   color: #343a40;
 }
 
+div.form-floating {
+  width: 45%;
+}
+
 #contactMessage {
   resize: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .form {
-    width: 60%;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 0;
+  form > div {
+    width: 55% !important;
   }
-  .form__textarea {
-    grid-column: 1/3;
+}
+
+@media only screen and (max-width: 768px) {
+  form > div {
+    align-items: center;
+  }
+  form > div > div {
+    flex-direction: column;
+  }
+  div.form-floating {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .my-3 {
+    margin: 0 !important;
+  }
+  .article__title {
+    margin-bottom: 2rem;
   }
   button.btn-contacto {
-    grid-column: 1/3;
-    margin: 0;
+    margin-top: 2rem !important;
   }
 }
