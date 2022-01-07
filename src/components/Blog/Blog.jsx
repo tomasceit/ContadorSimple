@@ -1,8 +1,8 @@
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
-const Blog = ({titulo, cuerpo}) => {
+const Blog = ({ id, titulo, cuerpo }) => {
   const handleIcon = () => {
-    const iconHeartOpacity = document.querySelector("#iconHeartOpacity");
+    const iconHeartOpacity = document.querySelector(`#iconHeartOpacity-${id}`);
     iconHeartOpacity.classList.toggle("icon-heart--opacity");
   };
   return (
@@ -18,7 +18,7 @@ const Blog = ({titulo, cuerpo}) => {
         <span>
           <AiOutlineHeart />
         </span>
-        <span id="iconHeartOpacity">
+        <span id={`iconHeartOpacity-${id}`}>
           <AiFillHeart />
         </span>
       </label>

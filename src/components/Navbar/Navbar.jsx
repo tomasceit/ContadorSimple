@@ -9,7 +9,7 @@ const Navbar = () => {
     } else {
       setScroll(false);
     }
-  })
+  });
   return (
     <header
       id="navbar"
@@ -17,7 +17,12 @@ const Navbar = () => {
     >
       <nav className="container-fluid justify-content-center px-1">
         <a href="index.html" className="navbar-brand">
-          <img id="logo" className={scroll ? "main-logo-scroll" : "main-logo"} src={require("../../media/Logo.webp")} alt="logo" />
+          <img
+            id="logo"
+            className={scroll ? "main-logo-scroll" : "main-logo"}
+            src={require("../../media/Logo.webp")}
+            alt="logo"
+          />
         </a>
         <section className="navbar-content justify-content-end w-100">
           <ul className="navbar-nav flex-row justify-content-around">

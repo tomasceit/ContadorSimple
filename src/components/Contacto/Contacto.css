@@ -1,10 +1,13 @@
-section#contacto {
+section#contacto > section {
   background-image: url("../../media/contacto_background.webp");
   background-size: cover;
   background-position: top center;
   margin: 120px 0;
   height: auto;
   width: 100%;
+}
+section#contacto::before {
+  display: none;
 }
 
 button.btn-contacto {

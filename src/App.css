@@ -1,4 +1,8 @@
-p, span, a, i, label {
+a,
+i,
+label,
+p,
+span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }

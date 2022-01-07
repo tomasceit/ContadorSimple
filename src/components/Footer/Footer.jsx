@@ -34,13 +34,17 @@ const Footer = () => {
       </p>
       <p className="m-0 d-flex gap-2">
         <span className="my-auto icon-whatsapp">
-          <i className="d-flex"><AiOutlineWhatsApp /></i>
+          <i className="d-flex">
+            <AiOutlineWhatsApp />
+          </i>
         </span>
         <span className="my-auto">+54 9 3406 42-5031</span>
       </p>
       <p className="m-0 d-flex gap-2">
         <span className="my-auto icon-email">
-          <i className="d-flex"><AiOutlineMail /></i>
+          <i className="d-flex">
+            <AiOutlineMail />
+          </i>
         </span>
         <span className="my-auto">contadorsimple@gmail.com</span>
       </p>

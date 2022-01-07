@@ -14,7 +14,6 @@ const Main = () => {
     setLoading(true);
     const db = getFirestore();
     const notasCollection = db.collection("notas");
-
     notasCollection
       .get()
       .then((querySnapshot) => {
@@ -26,11 +25,11 @@ const Main = () => {
           );
         }
       })
-      .catch(e => console.log("ERROR: ", e))
+      .catch((e) => console.log("ERROR: ", e))
       .finally(() => {
         setLoading(false);
       });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (loading) {
@@ -39,13 +38,13 @@ const Main = () => {
     return (
       <main className="container">
         {/* Sección que ofrecemos */}
-        <SectionHome/>
+        <SectionHome />
         {/* Sección quienes somos */}
-        <SectionAboutUs/>
+        <SectionAboutUs />
         {/* Sección servicios */}
-        <SectionServices/>
+        <SectionServices />
         {/* Sección nuestro Blog */}
-        <SectionBlog notas={notas}/>
+        <SectionBlog notas={notas} />
       </main>
     );
   }
