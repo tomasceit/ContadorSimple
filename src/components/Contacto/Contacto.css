@@ -3,6 +3,8 @@ section#contacto {
   background-size: cover;
   background-position: top center;
   margin: 120px 0;
+  height: auto;
+  width: 100%;
 }
 
 button.btn-contacto {
@@ -21,7 +23,7 @@ button.btn-contacto {
   color: #343a40;
 }
 
-div.form-floating {
+section.form-floating {
   width: 45%;
 }
 
@@ -30,19 +32,19 @@ div.form-floating {
 }
 
 @media only screen and (min-width: 768px) {
-  form > div {
+  form > section {
     width: 55% !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  form > div {
+  form > section {
     align-items: center;
   }
-  form > div > div {
+  form > section > section {
     flex-direction: column;
   }
-  div.form-floating {
+  section.form-floating {
     width: 100%;
     margin-bottom: 2rem;
   }

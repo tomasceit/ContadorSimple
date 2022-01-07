@@ -1,7 +1,6 @@
-* {
+p, span, a, i, label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: normal;
 }
 html {
   scroll-behavior: smooth;
@@ -12,12 +11,20 @@ h4,
 h5,
 h6 {
   margin-bottom: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 :target:before {
   content: "";
   display: block;
   margin-top: 90px;
   transition: all 0.5s ease;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .text-align-justify {

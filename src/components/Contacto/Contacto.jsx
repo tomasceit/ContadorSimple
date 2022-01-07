@@ -1,46 +1,45 @@
-import * as React from "react";
 import "./Contacto.css";
 
 const Contacto = () => {
   return (
     <section id="contacto">
-      <div className="container">
-        <button className="main--collapse btn btn-primary" type="button">
-          <h2 className="article__title">Haga su consulta aquí</h2>
-        </button>
+      <section className="container">
+        <h2 className="main__title py-3">Haga su consulta aquí</h2>
         <form
           action="https://formsubmit.co/26529d4aa9ba9c3dc15fc20805efc4ce"
           method="POST"
         >
-          <div className="d-flex flex-column">
-            <div className="d-flex my-3 justify-content-between w-100">
-              <div className="form-floating">
+          <section className="d-flex flex-column">
+            <section className="d-flex my-3 justify-content-between w-100">
+              <section className="form-floating">
                 <input
                   type="text"
                   name="nombre"
                   className="form-control"
                   id="contactName"
                   placeholder="Nombre *"
+                  autoComplete="off"
                   required
                 />
                 <label htmlFor="contactName">Nombre</label>
-              </div>
-              <div className="form-floating">
+              </section>
+              <section className="form-floating">
                 <input
                   type="text"
                   name="apellido"
                   className="form-control"
                   id="contactLastName"
                   placeholder="Apellido *"
+                  autoComplete="off"
                   required
                 />
                 <label htmlFor="contactLastName">Apellido</label>
-              </div>
-              <div className="d-none">
+              </section>
+              <section className="d-none">
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://localhost:3000/home#banner"
+                  value="https://contador-simple.netlify.app/home#inicio"
                 />
                 <input
                   type="hidden"
@@ -48,32 +47,34 @@ const Contacto = () => {
                   value="Nueva consulta para Contador Simple!"
                 />
                 <input type="hidden" name="_captcha" value="false" />
-              </div>
-            </div>
-            <div className="d-flex my-3 justify-content-between w-100">
-              <div className="form-floating">
+              </section>
+            </section>
+            <section className="d-flex my-3 justify-content-between w-100">
+              <section className="form-floating">
                 <input
                   type="email"
                   name="email"
                   className="form-control"
                   id="contactEmail"
                   placeholder="Email *"
+                  autoComplete="off"
                   required
                 />
                 <label htmlFor="contactEmail">Email</label>
-              </div>
-              <div className="form-floating">
+              </section>
+              <section className="form-floating">
                 <input
                   type="tel"
                   name="tel"
                   className="form-control"
                   id="contactTel"
                   placeholder="Telefono *"
+                  autoComplete="off"
                   required
                 />
                 <label htmlFor="contactTel">Telefono</label>
-              </div>
-            </div>
+              </section>
+            </section>
             <label htmlFor="contactMessage" className="d-none">
               Message
             </label>
@@ -88,9 +89,9 @@ const Contacto = () => {
             <button type="submit" className="btn btn-contacto my-3">
               ENVIAR
             </button>
-          </div>
+          </section>
         </form>
-      </div>
+      </section>
     </section>
   );
 };

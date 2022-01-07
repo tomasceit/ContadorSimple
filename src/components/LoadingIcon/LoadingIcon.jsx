@@ -1,4 +1,3 @@
-import * as React from "react";
 import "./LoadingIcon.css";
 
 const LoadingIcon = () => {
@@ -6,14 +5,14 @@ const LoadingIcon = () => {
     <div className="myContainer d-flex flex-column loading">
       <p></p>{" "}
       <div className="lds-roller">
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
   );
